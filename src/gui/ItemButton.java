@@ -24,7 +24,7 @@ public class ItemButton extends Button {
 		// TODO complete the constructor
 		this.setPadding(new Insets(5));
 		this.item = new Item(itemName);
-		ImageView itemPicture = new ImageView(this.item.getUrl());
+		ImageView itemPicture = new ImageView(this.item.getUrl()); // or new Image(this.item.getUrl()) instead of this.item.getUrl()
 		itemPicture.setFitWidth(48);
 		itemPicture.setFitHeight(48);
 		this.setGraphic(itemPicture);
